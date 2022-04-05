@@ -1,0 +1,292 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+:root {
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Abril Fatface", cursive;
+    font-family: "Libre Baskerville", serif;
+}
+
+.zone {
+    /*padding:30px 50px;*/
+    /*cursor:pointer;*/
+    color: rgb(56, 195, 77);
+    font-size: 1em;
+    border-radius: 4px;
+    border-top: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(44, 33, 33, 0.15) 0px -10px 20px;
+    -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+
+.container {
+    /*show heigh: auto*/
+    display: flex;
+    height: 40vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.container>* {}
+
+.contact-info {
+    flex-grow: 0.5;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+}
+
+.photo img {}
+
+
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin: 20px;
+    transition: all, 1s;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    justify-content: center;
+}
+
+.box>img {
+    width: 50%;
+}
+
+
+/***********************************************************************
+ *  Modals
+ **********************************************************************/
+
+.modal__technical {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
+.modal__soft__skills {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
+.modal__paperless {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
+.modal__ewa {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
+.modal__strayer {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
+.modal__whittier {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
+.modal__inner {
+    background-color: #ffffff;
+    margin: 1em;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(243, 10, 10) 1px;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: center;
+    border: solid rgb(93, 5, 244) 1px;
+}
+
+.modal__header__name {
+    margin-left: auto;
+}
+
+.btn__secnd.modal__close {
+    margin-left: auto;
+    margin-bottom: 0.9em;
+    margin-top: 0.6em;
+    margin-right: 0.6em;
+    width: 4em;
+    height: 4em;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.modal__nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal__nav__list>li {
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+
+footer {
+    text-align: center;
+}
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+
+
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
