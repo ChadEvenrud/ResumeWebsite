@@ -102,11 +102,27 @@ const newArray = function(array) {
 };
 console.log(newArray(array));
 
-const chad = {
-    name: "chad",
-    age: 26,
+const hexToNumber = (numbers) => {
+    const convertedNumber = [];
+    for (let number of numbers) {
+        if (number.toLowerCase() === "f") {
+            convertedNumber.push(15);
+        } else if (number.toLowerCase() === "e") {
+            convertedNumber.push(14);
+        } else convertedNumber.push(Number(number));
+    }
+    const newList = [
+        [convertedNumber.slice(0, 2)],
+        [convertedNumber.slice(2, 4)],
+        [convertedNumber.slice(4)],
+    ];
+    return newList;
 };
 
-for (let items in chad) {
-    console.log(chad[items]);
-}
+const hexConvert = (number) => {
+    //convert hex math = F= 15... frst number + second number * 16
+    const numbers = hexToNumber(number);
+    return numbers;
+};
+
+console.log(hexConvert("25202F"));

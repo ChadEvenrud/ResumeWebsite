@@ -214,6 +214,21 @@ a {
     border: solid black 1px;
 }
 
+.modal__about {
+    --gap: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    left: 0;
+    border: solid black 1px;
+}
+
 .modal__inner {
     background-color: #ffffff;
     margin: 1em;
