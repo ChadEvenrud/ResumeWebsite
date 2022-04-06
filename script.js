@@ -125,4 +125,4 @@ const hexConvert = (number) => {
     return numbers;
 };
 
-console.log(hexConvert("25202F"));
+// console.log(hexConvert("25202F"));
